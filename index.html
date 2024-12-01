@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SohcaHToA Project Invoice Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>SohcaHToA Project Invoice Generator</h1>
+
+      <div class="input-section">
+        <h2>Project Details</h2>
+        <input type="text" id="clientName" placeholder="Client Name" />
+        <input type="text" id="projectName" placeholder="Project Name" />
+        <input type="date" id="date" />
+
+        <h3>Project Components</h3>
+        <div class="component-inputs">
+          <div class="component">
+            <input
+              type="text"
+              placeholder="UI/UX Design"
+              value="UI/UX Design"
+              readonly
+            />
+            <input type="number" id="uiux" placeholder="Amount" />
+          </div>
+          <div class="component">
+            <input
+              type="text"
+              placeholder="Web Development"
+              value="Web Development"
+              readonly
+            />
+            <input type="number" id="web" placeholder="Amount" />
+          </div>
+          <div class="component">
+            <input
+              type="text"
+              placeholder="Backend Development"
+              value="Backend Development"
+              readonly
+            />
+            <input type="number" id="backend" placeholder="Amount" />
+          </div>
+          <div class="component">
+            <input
+              type="text"
+              placeholder="Mobile Development"
+              value="Mobile Development"
+              readonly
+            />
+            <input type="number" id="mobile" placeholder="Amount" />
+          </div>
+          <div class="component">
+            <input
+              type="text"
+              placeholder="Server Costs"
+              value="Server Costs"
+              readonly
+            />
+            <input type="number" id="server" placeholder="Amount" />
+          </div>
+        </div>
+        <button type="button" class="add-item-btn" onclick="addNewItem()">
+          + Add New Item
+        </button>
+
+        <button onclick="generateInvoice()">Generate Invoice</button>
+      </div>
+
+      <div id="invoice" class="invoice-section hidden">
+        <!-- Invoice will be generated here -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
