@@ -32,7 +32,7 @@ async function generateInvoice() {
                 <p>Project: ${projectName}</p>
             </div>
             <div>
-                <h3>SOHCAHTOA Platform</h3>
+                <h3>SOHCAHTOA  </h3>
                 <p>Invoice #: ${generateInvoiceNumber()}</p>
             </div>
         </div>
@@ -93,15 +93,3 @@ function addNewItem() {
 function removeItem(button) {
   button.parentElement.remove();
 }
-
-// // Add this function to pre-fill the HolaCare breakdown
-// function fillHolaCareBreakdown() {
-//   document.getElementById("uiux").value = 2000;
-//   document.getElementById("web").value = 2500;
-//   document.getElementById("backend").value = 3000;
-//   document.getElementById("mobile").value = 2000;
-//   document.getElementById("server").value = 500;
-// }
-
-// Add a button or call this function when needed
-// window.onload = fillHolaCareBreakdown;
